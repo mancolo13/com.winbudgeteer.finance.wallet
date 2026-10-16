@@ -17,9 +17,9 @@ class _MainScreenState extends State<MainScreen> {
 
   final List<Widget> _screens = const [
     Tab1Screen(),
-    Tab2Screen(),
     Tab3Screen(),
     Tab4Screen(),
+    Tab2Screen(),
   ];
 
   @override
@@ -38,11 +38,6 @@ class _MainScreenState extends State<MainScreen> {
           label: 'Budget',
         ),
         NavigationDestination(
-          icon: const Icon(Icons.credit_card_outlined),
-          selectedIcon: const Icon(Icons.credit_card, color: AppTheme.primaryColor),
-          label: 'Expenses',
-        ),
-        NavigationDestination(
           icon: const Icon(Icons.mail_outline),
           selectedIcon: const Icon(Icons.mail, color: AppTheme.primaryColor),
           label: 'Envelopes',
@@ -52,7 +47,11 @@ class _MainScreenState extends State<MainScreen> {
           selectedIcon: const Icon(Icons.flag, color: AppTheme.primaryColor),
           label: 'Goals',
         ),
-
+        NavigationDestination(
+          icon: const Icon(Icons.credit_card_outlined),
+          selectedIcon: const Icon(Icons.credit_card, color: AppTheme.primaryColor),
+          label: 'Expenses',
+        ),
         ],
       ),
     );
